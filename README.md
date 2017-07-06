@@ -1,6 +1,29 @@
 # ember-md5
 
-This README outlines the details of collaborating on this Ember addon.
+This is the blueimp-md5 wrapper for EmberJS applications.
+
+## Installation
+```sh
+ember install ember-md5
+```
+
+## Usage
+```js
+import md5 from 'ember-md5';
+
+md5('Hash something' /* key, raw */);
+```
+
+or you can use built-in helper
+
+```hbs
+{{md5 'My String' 'My key' true}}
+```
+- `first parameter` - `string` - string to hash
+- `second parameter` - `string` -key of the hash
+- `third parameter` - `boolean` - raw value
+
+# Contributions
 
 ## Installation
 
