@@ -2,6 +2,7 @@
 'use strict';
 
 const path = require('path');
+const resolve = require('resolve');
 const Funnel = require('broccoli-funnel');
 const mergeTrees = require('broccoli-merge-trees');
 
@@ -17,7 +18,7 @@ module.exports = {
 
   treeForVendor(tree) {
     let trees = [tree];
-    let md5Path = path.join(this.app.project.nodeModulesPath, 'blueimp-md5', 'js');
+    let md5Path = path.dirname(resolve.sync("blueimp-md5", { basedir: this.root }));
 
     trees.push(new Funnel(md5Path, {
       destDir: 'ember-md5',
