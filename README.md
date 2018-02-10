@@ -9,7 +9,7 @@ ember install ember-md5
 
 ## Usage
 ```js
-import md5 from 'ember-md5';
+import md5 from 'md5';
 
 md5('Hash something' /* key, raw */);
 ```

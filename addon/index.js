@@ -1,1 +1,1 @@
-export { default } from 'blueimp-md5';
+export { default } from 'md5';
