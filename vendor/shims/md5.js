@@ -1,5 +1,4 @@
-/* eslint-env node */
-define('blueimp-md5', [], function() {
+define('md5', [], function() {
   'use strict';
 
   var md5;
