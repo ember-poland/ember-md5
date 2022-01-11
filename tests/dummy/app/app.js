@@ -1,3 +1,4 @@
+/* eslint-disable ember/no-classic-classes */
 import Application from '@ember/application';
 import Resolver from './resolver';
 import loadInitializers from 'ember-load-initializers';
